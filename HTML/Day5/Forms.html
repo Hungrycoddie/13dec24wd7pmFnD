@@ -57,7 +57,7 @@ box-shadow: 10px 10px 5px 0px rgba(214,21,214,1);
 </head>
 <body>
     <h1>Form Basics</h1>
-    <form action="https://formspree.io/f/xyzyrona" id="myForm" method="post">
+    <form action="" id="myForm" method="post">
         <label for="name">Name</label>
         <input type="text" id="name" name="name" >
 
@@ -85,24 +85,16 @@ box-shadow: 10px 10px 5px 0px rgba(214,21,214,1);
 
     <button type="submit">Submit</button>
 
+
+
+
+    
     <p id="errorMessage" class="error"></p>
     </form>
 
-    <script>
-        const form = document.getElementById("myForm");
-        const errorMessage = document.getElementById("errorMessage");
 
 
-form.addEventListener('submit', function (event){
-    errorMessage.textContent="";
 
-    const password = document.getElementById("password").value;
-    if(password.length <6){
-        event.preventDefault();
-        errorMessage.textContent = "Password must be atleast 6 characters long "
-    }
-});
-
-    </script>
+   
 </body>
 </html> 
