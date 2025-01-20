@@ -74,6 +74,120 @@
 
 
 
+// // //Assignment operators
+
+
+// assign 
+
+// let a = 10;
+// let b = 20;
+
+
+
+// add and assign
+
+
+
+
+// let x = "";
+
+// x += 10;
+
+// console.log(x);
+
+
+// subtract and assign
+
+// let y = 30;
+// y -= 20;
+
+
+// console.log(y);
+
+
+// =      
+
+
+
+
+// comparision opertors     
+
+
+// 5 == '5'
+ 
+
+// let a = 5;
+// let b = '5';
+
+
+// console.log(a  !== b);
+
+
+
+
+
+
+// ==	Equal to	5 == '5'	true
+// ===	Strictly equal to	5 === '5'	false
+// !=	Not equal to	5 != 3	true
+// !==	Strictly not equal	5 !== '5'	true
+// >	Greater than	7 > 3	true
+// <	Less than	7 < 3	false
+// >=	Greater than or equal	7 >= 7	true
+// <=	Less than or equal	3 <= 5	true
+
+
+
+
+// logicalOperators
+
+
+
+
+// &&
+// console.log(5 > 3 && 70 < 10 && 10 > 5);
+// console.log(
+// !(5 > 3))
+
+    
+//     // Arithmetic Operators
+// let a = 10, b = 5;
+// console.log(a + b); // 15
+// console.log(a - b); // 5
+
+// // Assignment Operators
+// a += 2; // a = a + 2
+// console.log(a); // 12
+
+// // Comparison Operators
+// console.log(a > b); // true
+// console.log(a === b); // false
+
+// // Logical Operators
+// let c = (a > b) && (b > 3); // true && true
+// console.log(c); // true
+
+    // syntax
+// if (condition) {
+//     //code to be exicuted 
+// }
+
+
+
+// 
+
+// if (condition) {
+//     //code to be exicuted 
+// } else if (condion) {
+//     //code to be exicuted 
+    
+// } else {
+    
+// }
+
+
+
+
 
 
 
