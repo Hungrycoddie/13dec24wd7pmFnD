@@ -71,21 +71,35 @@
 // Symbol;
 
 
-const screat = Symbol('screat');
+// const screat = Symbol('screat');
 
-let user = {
-    name: 'John',
-    [screat]: "hidden mnessage"
-};
+// let user = {
+//     name: 'John',
+//     [screat]: "hidden mnessage"
+// };
 
 
-console.log(user.name);
-console.log(screat);
+// console.log(user.name);
+// console.log(screat);
 
 
 
 
 // Object;
+
+
+// let arun1 = {
+//     name: 'Arun',
+//     age: 25,
+//     isMarried: false,
+//     'likes birds': true,
+//     arunsFn: function(){
+//         console.log('Hello');
+//     }
+    
+// }
+// console.log(arun1.name);
+
  
 
 
