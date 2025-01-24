@@ -193,15 +193,78 @@
 
 
 
-let score = 85;
+// let score = 85;
 
-if (score >= 90) {
-  console.log("Grade: A");
-} else if (score >= 80) {
-  console.log("Grade: B");
-} else if (score >= 70) {
-  console.log("Grade: C");
-} else {
-  console.log("Grade: F");
-}
-// Output: Grade: B
+// if (score >= 90) {
+//   console.log("Grade: A");
+// } else if (score >= 80) {
+//   console.log("Grade: B");
+// } else if (score >= 70) {
+//   console.log("Grade: C");
+// } else {
+//   console.log("Grade: F");
+// }
+// // Output: Grade: B
+
+
+
+// switch (expression) {
+//   case value1:
+//     //excucute the case value 1
+//     break;
+//   case value2:
+//     //excucute the case value 2
+//     break;
+//   default:
+    
+//     //Add more cases as needed 
+// }
+
+
+
+// const day = "Tuesday";
+
+// switch (day) {
+//   case "Monday":
+//     console.log("Start of the week!");
+//     break;
+//   case "Tuesday":
+//     console.log("Second day of the week!");
+//     break;
+//   case "Wednesday":
+//     console.log("Middle of the week!");
+//     break;
+//   default:
+//     console.log("Not a valid day!");
+// }
+
+
+
+// const fruit = "apple";
+
+// switch (fruit) {
+//   case "apple":
+//     console.log("Apples are red.");
+//   case "banana":
+//     console.log("Bananas are yellow.");
+//   default:
+//     console.log("Fruit not recognized.");
+// }
+
+
+
+// const score = 85;
+
+// switch (true) {
+//   case score >= 90:
+//     console.log("Grade: A");
+//     break;
+//   case score >= 80:
+//     console.log("Grade: B");
+//     break;
+//   case score >= 70:
+//     console.log("Grade: C");
+//     break;
+//   default:
+//     console.log("Grade: F");
+// }
