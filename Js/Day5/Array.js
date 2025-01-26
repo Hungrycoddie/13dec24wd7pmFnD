@@ -115,20 +115,20 @@
 
 
 
-const matrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9]
-];
+// const matrix = [
+//   [1, 2, 3],
+//   [4, 5, 6],
+//   [7, 8, 9]
+// ];
 
 
 
 // Iterating over a multidimensional array
-for (let row of matrix) {
-  for (let value of row) {
-    console.log(value);
-  }
-}
+// for (let row of matrix) {
+//   for (let value of row) {
+//     console.log(value);
+//   }
+// }
 // Output:
 // 1
 // 2
