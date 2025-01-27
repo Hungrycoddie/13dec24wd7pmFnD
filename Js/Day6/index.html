@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub API</title>
+</head>
+<body>
+    <h1>GitHub API</h1>
+    <div id="name">Name: <span id="user-name"></span></div>
+    <div id="image">Image: <img id="user-image" src="" alt="User Avatar" width="100"></div>
+
+    <script>
+        async function fetchUser() {
+            const apiUrl = "https://api.github.com/users/Arun-cloud-dev";
+
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const user = await response.json();
+                // Update the HTML with fetched data
+                document.getElementById("user-name").textContent = user.login;
+                document.getElementById("user-image").src = user.avatar_url;
+                document.getElementById("user-image").alt = `${user.login}'s Avatar`;
+            } catch (error) {
+                console.log("An error occurred:", error.message);
+            }
+        }
+
+        // Call the function to fetch and display the data
+        fetchUser();
+    </script>
+</body>
+</html>
