@@ -78,33 +78,33 @@
 
 
 
-// fetchingFolowers();
+// // fetchingFolowers();
 
 
-async function fetchFolowers() {
-    const apiUrl = "https://api.github.com/users/Arun-cloud-dev/followers"; 
+// async function fetchFolowers() {
+//     const apiUrl = "https://api.github.com/users/Arun-cloud-dev/followers"; 
 
 
-    try {
-        console.log("fetching the data .....");
-        const response = await fetch(apiUrl);
-        if (!response.ok) {
-            throw new Error (`Https error ststus: ${response.status} `)
-        }
+//     try {
+//         console.log("fetching the data .....");
+//         const response = await fetch(apiUrl);
+//         if (!response.ok) {
+//             throw new Error (`Https error ststus: ${response.status} `)
+//         }
 
-        const followers = await response.json();
+//         const followers = await response.json();
 
-        followers.forEach(follower => {
-            console.log(`login : ${follower.login}`);
-            console.log(`Avatar url : ${follower.avatar_url}`);
-
-
-        })
-    } catch(error) {
-        console.log("an error has occured: " , error.message );
-    }
-}
+//         followers.forEach(follower => {
+//             console.log(`login : ${follower.login}`);
+//             console.log(`Avatar url : ${follower.avatar_url}`);
 
 
+//         })
+//     } catch(error) {
+//         console.log("an error has occured: " , error.message );
+//     }
+// }
 
-fetchFolowers();
+
+
+// fetchFolowers();
