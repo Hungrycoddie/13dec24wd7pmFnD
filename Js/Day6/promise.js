@@ -108,3 +108,18 @@
 
 
 // fetchFolowers();
+
+
+
+
+// create a a function 
+
+function myFunction() {
+    // function body
+    console.log("helleo worldssss");
+}
+
+
+myFunction()
+
+
