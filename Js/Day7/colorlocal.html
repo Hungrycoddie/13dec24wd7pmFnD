@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background Color</title>
+</head>
+
+<body>
+    <h1>Choose a Background Color</h1>
+<input type="color" id="colorPicker">
+<button id="saveColor">Save Color</button>
+<h2>Saved Colors:</h2>
+<div id="colorList"></div>
+
+
+    <!-- <script>
+        // Event listener for the "Apply Color" button
+        document.getElementById('applyColor').onclick = function () {
+            // Get the selected color from the color input
+            const selectedColor = document.getElementById('colorPicker').value;
+            // Change the background color of the body
+            document.body.style.backgroundColor = selectedColor;
+        };
+    </script> -->
+
+
+
+
+    <script>
+        // Function to render saved colors
+        function renderColors() {
+            const colors = JSON.parse(localStorage.getItem('colors')) || [];
+            const colorList = document.getElementById('colorList');
+            colorList.innerHTML = '';
+
+            colors.forEach(color => {
+                const colorDiv = document.createElement('div');
+                colorDiv.style.backgroundColor = color;
+                colorDiv.style.width = '50px';
+                colorDiv.style.height = '50px';
+                colorDiv.style.display = 'inline-block';
+                colorDiv.style.margin = '5px';
+                colorDiv.style.cursor = 'pointer';
+                colorDiv.title = `Click to apply ${color}`;
+
+                // Change background color on click
+                colorDiv.onclick = function () {
+                    document.body.style.backgroundColor = color;
+                };
+
+                colorList.appendChild(colorDiv);
+            });
+        }
+
+        // Save selected color to Local Storage
+        document.getElementById('saveColor').onclick = function () {
+            const colorPicker = document.getElementById('colorPicker');
+            const selectedColor = colorPicker.value;
+
+            // Get existing colors from Local Storage
+            const colors = JSON.parse(localStorage.getItem('colors')) || [];
+
+            // Add new color if not already saved
+            if (!colors.includes(selectedColor)) {
+                colors.push(selectedColor);
+                localStorage.setItem('colors', JSON.stringify(colors));
+                alert(`${selectedColor} saved!`);
+            } else {
+                alert(`${selectedColor} is already saved.`);
+            }
+
+            renderColors();
+        };
+
+        // Render saved colors on page load
+        window.onload = renderColors;
+    </script>
+
+
+
+</body>
+
+</html>

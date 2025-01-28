@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storege </title>
+</head>
+<body>
+        <h1>local stioreage </h1>
+        <button id="save">Save to local storege  </button>
+        <button id="get">Get from the local storege</button>
+        <button id="clear"> Clear from the Local storege</button>
+
+        <script>
+            document.getElementById('save').onclick = function(){
+                localStorage.setItem('username', 'Arun');
+                alert("Data saved to local storege");
+            }
+
+
+            document.getElementById('get').onclick = function(){
+                let username = localStorage.getItem('username');
+                alert("Data from local storege: " + username);
+            }
+
+
+            document.getElementById('clear').onclick = function(){
+                localStorage.clear();
+                alert("Data cleared from local storege");
+            }
+        </script>
+</body>
+</html>
